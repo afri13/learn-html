@@ -2,34 +2,40 @@ body{
     margin: 0;
     padding: 0;
 }
-.header{
+
+.header {
     background-color:#87509c;
     width: 100%;
 }
-.conteiner{
+
+.container{
     max-width: 1033px;
     margin: 0 auto;
 }
-.img-wrap {
+
+.header .img-wrap {
     display: inline-block;
 }
+
 .header .img-wrap img{
     width: 117px;
     height: 37px;
     margin-top: 57px;
     padding-bottom: 57px;
 }
-.menu {
+
+.header .menu {
    float: right;
    max-width: 500px;
    margin-top:70px;
    text-align: right;
 }
-.menu li{
+
+.header .menu li{
    display: inline-block;
 }
 
-.menu li a{
+.header .menu li a{
     color: #ffffff;
     font-family: "Titillium Web";
     font-size: 16px;
@@ -39,31 +45,105 @@ body{
     padding: 9px 17px;
     text-decoration: none;
 }
-.menu li .active a{
+
+.header .menu li .active a{
     border: 1px solid white;
 }
-.menu li a:hover{
+
+.header .menu li a:hover{
     width: 77px;
     height: 32px;
     background-color: #643a79;
     border-radius: 10%;
 }
+
 @media only screen and (max-width: 600px){
-    .menu{
+    .header .menu{
         float: none;
         max-width: 100%;
         margin: 0;
         padding:0;
     }
-    .menu li {
+
+    .header .menu li {
         display: block;
         float: none;
         text-align: center;
         margin-bottom: 15px;
         padding-bottom: 25px;
     }
+
+    .header .menu li:last-child {
+        margin-bottom: 0;
+    }
+
     .header .img-wrap {
+        display: block;
         width: 100%;
         text-align: center;
     }
+}
+
+.footer {
+    background-color: #344b8e;
+    width: 100%;
+    height: auto;
+    
+}
+
+.footer .menu-footer {
+    margin: 0;
+    list-style-type: none;
+    padding: 42.5px 0;
+    text-align: center;
+    margin: 0 50px;
+}
+
+.footer .menu-footer li {
+    display: inline-block;
+    width: 12%;
+    margin-right: 20px;
+}
+
+.footer .menu-footer li:last-child{
+    margin-right: 0;
+}
+
+.footer .menu-footer li a{
+    color: #ffffff;
+    font-family: "Titillium Web - Semi Bold";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.91px;
+    padding:0;
+    letter-spacing: 0.48px;
+    text-decoration: none;
+}
+
+.footer .menu-footer li a.active {
+    color:#30bae7;
+}
+
+@media only screen and (max-width: 600px){
+    .footer .menu-footer{
+        float: none;
+        max-width: 100%;
+        margin: 0;
+        padding:0;
+    }
+
+    .footer .menu-footer li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+        padding-bottom: 25px;
+
+    }
+
+    .footer .menu-footer li:first-child{
+        padding-top: 20px;
+    }
+
+
 }
