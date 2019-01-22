@@ -1,0 +1,108 @@
+.testimonials{
+    background-color:#e7f1f8; 
+}
+
+.testimonials .hadline{
+    margin-top: 0;
+    color: #3c4761;
+    font-family: "Titillium Web";
+    font-size: 41px;
+    font-weight: 700;
+    line-height: 44px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-top: 119px;
+    text-align: center;
+    margin-bottom: 51px;
+    position: relative;
+}
+
+.testimonials .subline{
+    color: #3c4761;
+    font-family: "Titillium Web";
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26.84px;
+    letter-spacing: 0.36px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 78px;
+    }
+
+.testimonials .hadline::before{
+    content:"";
+    background-image: url(../slike/Line.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 87px;
+    height: 4px;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #bdd1df;
+    position: absolute;
+}
+
+.testimonials .testimonials-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.testimonials .testimonials-item{
+    flex-basis: 25%;
+    max-width: 25%;
+    text-align: center;
+}
+
+.testimonials .testimonials-items .tesmonial-headline{
+    color: #27283d;
+    font-family: "Titillium Web";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+    margin: 41px 0 15px;
+}
+
+.testimonials .testimonials-items span{
+    color: #30bae7;
+    font-family: "Titillium Web";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.32px;
+}
+
+.testimonials .testimonials-items .testimonials-subline{
+    color: #3c4761;
+    font-family: "Titillium Web";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-top: 26px;
+    margin-bottom: 31px;
+}
+
+.testimonials .icons img{
+    margin-right: 12px;
+}
+
+.testimonials .icons{
+    padding-bottom: 130px;
+}
+
+@media only screen and (max-width: 767px){
+    .testimonials .subline{
+        margin: 0 20px;
+    }
+
+    .testimonials .testimonials-item {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+    

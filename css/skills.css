@@ -1,0 +1,83 @@
+.skills{
+    background-color: #ffffff;
+}
+
+.skills .hadline{
+    margin-top: 0;
+    color: #3c4761;
+    font-family: "Titillium Web";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 29.91px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    padding-top: 117px;
+    margin-bottom: 48px;
+    position: relative;
+}
+
+.skills .subline{
+    color: #3c4761;
+    font-family: "Titillium Web";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    text-align: center;
+    margin:80px 90px;
+   
+}
+
+.skills .hadline::before{
+    content:"";
+    background-image: url(../slike/Line.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 87px;
+    height: 4px;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #bdd1df;
+    position: absolute;
+}
+
+.skills .skills-items{
+    display: flex;
+    flex-basis: 100%;
+    max-width: 100%;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.skills .skills-item{
+    flex-basis: 25%;
+    max-width: 25%;
+    text-align: center;
+}
+
+.skills .skills-items .skills-hadline{
+    color: #3c4761;
+    font-family: "Titillium Web";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+    margin: 31px 0 62px;
+}
+
+.skills .skills-items {
+    padding-bottom: 122px;
+}
+
+@media only screen and (max-width: 767px){
+    .skills .subline{
+        margin: 0 20px;
+    }
+    .skills .skills-item{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
