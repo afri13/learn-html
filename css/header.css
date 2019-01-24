@@ -9,7 +9,12 @@ body{
 }
 
 .container{
-    max-width: 1033px;
+    margin: 0 auto;
+    max-width: 1110px;
+}
+
+.container.container-portofolio {
+    max-width: 1110px;
     margin: 0 auto;
 }
 

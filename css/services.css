@@ -2,7 +2,7 @@
     background-color: #17c2a4;
 }
 
-.services .hadline {
+.services .headline {
     margin: 0;
     color: #ffffff;
     font-family: "Titillium Web";
@@ -16,7 +16,7 @@
     position: relative;
 }
 
-.services .hadline::before{
+.services .headline::before{
     content:"";
     position: absolute;
     background-image: url(../slike/Line.png);

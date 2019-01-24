@@ -2,7 +2,7 @@
     background-color:#e7f1f8; 
 }
 
-.testimonials .hadline{
+.testimonials .headline{
     margin-top: 0;
     color: #3c4761;
     font-family: "Titillium Web";
@@ -29,7 +29,7 @@
     margin-bottom: 78px;
     }
 
-.testimonials .hadline::before{
+.testimonials .headline::before{
     content:"";
     background-image: url(../slike/Line.png);
     background-size: cover;
@@ -105,4 +105,5 @@
         max-width: 100%;
     }
 }
+
     

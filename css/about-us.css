@@ -1,0 +1,149 @@
+.about-us{
+    background-color: #d74680;
+}
+
+.about-us .headline{
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 29.91px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    position: relative;
+    padding-top: 120px;
+    margin-top: 0;
+    margin-bottom: 48px;
+    
+}
+
+.about-us .subline{
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    text-align: center;
+    margin-bottom: 71px;
+}
+
+.about-us .headline::before{
+    content:"";
+    background-image: url(../slike/Line.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 87px;
+    height: 4px;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #bdd1df;
+    position: absolute;
+}
+
+.about-us .about-us-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    max-width: 100%;
+    padding-bottom: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.about-us .about-us-items .about-us-item {
+    flex-basis: 50%;
+    max-width: 50%;
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.about-us .about-us-items .about-us-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+}
+
+.about-us .about-us-items .about-us-item .img-wrap{
+    flex-basis: 30%;
+    max-width: 30%;
+}
+
+.about-us .about-us-items .about-us-item .desc-wrapper {
+    flex-basis: 70%;
+    max-width: 70%;
+}
+
+.about-us .img-desc{
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-size: 21px;
+    font-style: italic;
+    line-height: 31.2px;
+    letter-spacing: 0.35px;
+    font-weight: 400;
+    margin: 10px 0 30px;
+}
+
+.about-us .about-us-subline{
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+    margin: 0;
+}
+
+.about-us span{
+    display: block;
+    color: #ffdd99;
+    font-family: "Titillium Web";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.32px;
+}
+
+.about-us .desc-wrapper{
+    padding-right: 69px;
+}
+
+@media only screen and (max-width: 767px){
+    .about-us .headline{
+        line-height: 40px;
+        font-size: 30px;
+    }
+
+    .about-us .about-us-items .about-us-item{
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .about-us .about-us-items .about-us-item .img-wrap {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .about-us .about-us-items .about-us-item .desc-wrapper{
+        flex-basis: 100%;
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .about-us .desc-wrapper{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .about-us .about-us-items .about-us-item:nth-last-child(-n + 2) {
+        margin-bottom: 50px;
+    }
+    
+
+}

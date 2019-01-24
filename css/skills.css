@@ -2,7 +2,7 @@
     background-color: #ffffff;
 }
 
-.skills .hadline{
+.skills .headline{
     margin-top: 0;
     color: #3c4761;
     font-family: "Titillium Web";
@@ -29,7 +29,7 @@
    
 }
 
-.skills .hadline::before{
+.skills .headline::before{
     content:"";
     background-image: url(../slike/Line.png);
     background-size: cover;
@@ -57,7 +57,7 @@
     text-align: center;
 }
 
-.skills .skills-items .skills-hadline{
+.skills .skills-items .skills-headline{
     color: #3c4761;
     font-family: "Titillium Web";
     font-size: 24px;
@@ -74,10 +74,15 @@
 
 @media only screen and (max-width: 767px){
     .skills .subline{
-        margin: 0 20px;
+        margin: 0 20px 20px;
     }
     .skills .skills-item{
         flex-basis: 100%;
         max-width: 100%;
+    }
+    
+    .skills .headline{
+        line-height: 34px;
+        font-size: 30px;
     }
 }
