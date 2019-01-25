@@ -1,0 +1,583 @@
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #87509c;
+  padding: 50px 0;
+}
+
+.header .logo-wrap {
+  max-width: 117px;
+  height: 37px;
+  margin: auto;
+  display: inline-block;
+}
+
+.header .logo-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+.header nav {
+  display: inline-block;
+  padding-top: 3px;
+  font-size: 0;
+  float: right;
+}
+
+.header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header nav ul li {
+  margin: 0;
+  list-style: none;
+  padding: 10px 17px 9px;
+  display: inline-block;
+  border-radius: 5px
+}
+
+.header nav ul li:hover {
+  background: #643a79;
+}
+
+.header nav a {
+  color: #ffffff;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  .header nav ul li {
+    display: block;
+    text-align: center;
+  }
+
+  .header nav {
+    float: none;
+    display: block;
+    margin-top: 20px
+  }
+
+  .header .logo-wrap {
+    display: block;
+    text-align: center
+  }
+}
+
+/* Footer */
+
+.footer {
+  background-color: #344b8e;
+  padding: 48px 0 41px;
+}
+
+.footer .footer-items{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin: 0 50px;
+}
+
+.footer .footer-items li{
+  display: inline-block;
+  text-decoration: none; 
+  width: 11%; 
+  color: #ffffff;
+  font-family: "Titillium Web - Semi Bold", sans-serif;
+  font-size: 24px;
+  margin-right: 20px;
+  font-weight: 400;
+  line-height: 29.91px;
+  letter-spacing: 0.48px;
+}
+
+.footer .footer-items li:last-child {
+  margin-right: 0;
+}
+
+.footer .footer-items li:hover{
+  color: #30bae7;
+  letter-spacing: 0.48px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) { 
+  .footer .footer-items li {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+
+  }
+  .footer .footer-items li:last-child{
+    margin-bottom:0;
+  }
+}
+
+ /*call to action*/
+
+ .call-to-action{
+   background-color: #87509c;
+ }
+
+ .headline{
+  color: #f7f3ea;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 48.82px;
+  margin: 0 40px;
+  padding-top:120px;
+  text-align: center;
+  margin-bottom: 50px;
+ }
+
+ .button-wrap{
+  max-width: 340px;
+  margin: auto;
+  padding-bottom: 140px;
+  text-align: center;
+ }
+
+ .button-wrap a {
+  background-color: #eb7d4b;
+  padding: 28px 82px;
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 7px;
+  line-height: 26.19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+ }
+
+ @media only screen and (max-width: 767px) {
+  .headline{
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .button-wrap a {
+    padding: 18px 50px;
+  }
+}
+
+/*services*/
+.services{
+  background-color: #17c2a4;
+}
+
+.services .headline{
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 29.91px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  margin-top:0;
+  padding-top: 119px;
+  position: relative;
+}
+
+.services .headline::after {
+  content: "";
+  position:absolute;
+  background-image: url(../img/Line.svg); 
+  width: 87px;
+  height: 4px;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+.services .subline{
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.36px;
+  margin: 0 240px;
+  text-align: center;
+  margin-bottom: 78px;
+}
+
+.services .services-wrap{
+  display:flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-bottom: 130px;
+  align-items: flex-end;
+}
+
+.services .service {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.services .service .service-headline{
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  margin-top: 62px;
+}
+
+.services .service .service-subline{
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px){
+  .services .service{
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .services .subline{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .services .service-subline {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .services .headline{
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+}
+
+/*testimonials*/
+
+.testimonials{
+  background-color: #e7f1f8;
+}
+
+.testimonials .headline{
+  color: #3c4761;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 41px;
+  font-weight: 700;
+  line-height: 30.87px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.testimonials .subline{
+  color: #3c4761;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26.84px;
+  letter-spacing: 0.36px;
+  text-align: center;
+}
+
+.testimonials .headline::after {
+  content: "";
+  position:absolute;
+  background-image: url(../img/Line.svg); 
+  width: 87px;
+  height: 4px;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+
+.flex-container{
+  display: flex;
+}
+
+.flex-container .item{
+  flex-basis: 25%;
+}
+  
+
+.testimonials .headline-wrap .headline{
+  color: #27283d;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonials .headline-wrap .headline::after{ 
+content: none;
+ }
+
+.testimonials .headline-wrap .title {
+  color: #30bae7;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.32px;
+  text-align: center;
+}
+
+.testimonials .headline-wrap .subline{
+  width: 196px;
+  height: 112px;
+  color: #3c4761;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin-bottom: 417px;
+  margin-left: 202px;
+  margin-top: 297px;
+  margin-right: 1040px;
+}
+
+.img-wrap{
+  display: inline-block;
+  padding: 30px;
+}
+
+.social-icons{
+  display:flex;
+  justify-content: center;
+}
+
+.social-icons .icon{
+  width: 32px;
+  height: 32px;
+  background-color: #bdd1df;
+  margin-right: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 127px;
+  
+}
+
+
+.social-icons{
+  color:white;
+}
+
+/*skills*/
+
+.skills{
+  background-color: white;
+  padding-bottom: 122px;
+  padding-top: 117px;
+}
+
+
+.skills .headline{
+  color: #3c4761;
+  font-family: "Titillium Web";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 29.91px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  letter-spacing: 0.36px;
+  padding-top:0;
+
+  }
+
+.skills .subline{
+  color: #3c4761;
+font-family: "Titillium Web",sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0.36px;
+text-align: center;
+margin-bottom: 84px;
+padding: 0 268px;
+}
+
+.skills-wrap {
+  display: flex;
+}
+.item {
+  width: 160px;
+  flex:1;
+}
+
+.item h2 {
+  text-align:center;
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  color: #3c4761;
+  font-family: "Titillium Web";
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 20.84px;
+  text-transform: uppercase;
+  letter-spacing: 0.86px;
+  font-size: 32px;
+  letter-spacing: 0.55px;
+}
+.circle {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+}
+.item .subline {
+  padding: 0;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 32px; 
+}
+
+svg {
+ -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.circle_animation {
+stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
+stroke-dashoffset: 440;
+}
+
+.first .circle_animation {
+  -webkit-animation: first 1s ease-out forwards;
+  animation: first 1s ease-out forwards;
+}
+
+.second .circle_animation {
+  -webkit-animation: second 1s ease-out forwards;
+  animation: second 1s ease-out forwards;
+}
+.third .circle_animation {
+  -webkit-animation: third 1s ease-out forwards;
+  animation: third 1s ease-out forwards;
+
+
+}
+.fourth .circle_animation {
+  -webkit-animation: fourth 1s ease-out forwards;
+  animation: fourth 1s ease-out forwards;
+
+
+}
+
+
+@-webkit-keyframes first {
+  to {
+    stroke-dashoffset: 44; /* 50% would be 220 (half the initial value specified above) */
+    /* to calculate 440 is 100%, to calculate 90% ((100-90)/100)*440 = 44*/
+  }
+}
+
+@keyframes first {
+  to {
+    stroke-dashoffset: 44;
+  }
+}
+
+@-webkit-keyframes second {
+  to {
+    stroke-dashoffset: 110; /* 50% would be 220 (half the initial value specified above) */
+    /* to calculate 440 is 100%, to calculate 90% ((100-90)/100)*440 = 44*/
+  }
+}
+
+@keyframes second {
+  to {
+    stroke-dashoffset: 110;
+  }
+}
+
+@keyframes third {
+  to {
+    stroke-dashoffset: 132;
+  }
+}
+
+@-webkit-keyframes third {
+  to {
+    stroke-dashoffset: 132; /* 50% would be 220 (half the initial value specified above) */
+    /* to calculate 440 is 100%, to calculate 90% ((100-90)/100)*440 = 44*/
+  }
+}
+
+
+@keyframes fourth {
+  to {
+    stroke-dashoffset: 88;
+  }
+}
+
+@-webkit-keyframes fourth {
+  to {
+    stroke-dashoffset: 88; /* 50% would be 220 (half the initial value specified above) */
+    /* to calculate 440 is 100%, to calculate 90% ((100-90)/100)*440 = 44*/
+  } 
+}
+
+
+
+
+
+
+.first svg circle{
+  stroke: #30bae7;
+  
+}
+
+.second svg circle{
+  stroke: #d74680;
+}
+
+.third svg circle{
+  stroke: #15c7a8;
+}
+
+.fourth svg circle{
+  stroke: #eb7d4b;
+}
+
+
+
+
+
+
