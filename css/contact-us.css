@@ -1,0 +1,161 @@
+.contact-us{
+    background-color: #3c5499;
+}
+
+.contact-us .headline{
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 29.91px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+    text-align: center;
+    padding-top: 120px;
+    margin: 0;
+    margin-bottom: 48px;
+}
+
+.contact-us .subline{
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    text-align: center;
+    margin-bottom: 76px;
+}
+
+.contact-us .headline::before{
+    content:"";
+    background-image: url(../slike/Line.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 87px;
+    height: 4px;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #bdd1df;
+    position: absolute;
+}
+
+.contact-us .contact-us-wrap input{
+    background-color: #273a71;
+    padding: 20px 0 20px 25px;
+    width: calc(50% - 45px);
+    border: none;
+    border-radius: 10px;
+    margin-right: 32px;
+    
+}
+
+.contact-us .contact-us-wrap .input-field-wrap input:last-child{
+    margin-right: 0;
+}
+
+.contact-us .contact-us-wrap input::placeholder {
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.contact-us .contact-us-wrap {
+    text-align: center;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.contact-us .contact-us-wrap textarea{
+    background-color: #273a71;
+    border: none;
+    border-radius: 10px;
+    max-width: 100%;
+    min-height: 200px;
+}
+
+.contact-us .contact-us-wrap textarea::placeholder{
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 24px 0 0 25px;
+}
+
+.contact-us .input-field-wrap {
+    position: relative;
+    margin-bottom: 27px;
+}
+
+.contact-us .contact-us-wrap .area-wrap {
+    position: relative;
+
+}
+
+.contact-us .area-wrap{
+    margin-bottom: 60px;
+}
+
+.contact-us .btn-wrap{
+    text-align: center;
+    padding-bottom: 115px;
+}
+
+.contact-us .btn-wrap a{
+    background-color: #30bae7;
+    color: #ffffff;
+    font-family: "Titillium Web - Semi Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.19px;
+    text-transform: uppercase;
+    letter-spacing: 0.27px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 28px 85px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+@media only screen and (max-width: 767px){
+    .contact-us .subline{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .contact-us .headline{
+        font-size: 30px;
+    }
+
+    .contact-us .contact-us-wrap{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .contact-us .contact-us-wrap input{
+        display: block;
+        width: calc(100% - 20px);
+        margin-right: 0;
+        margin-bottom: 15px;
+
+    }
+
+    .contact-us .contact-us-wrap input :last-child{
+        margin-bottom: 0;
+
+    }
+
+    .contact-us .input-field-wrap{
+        margin: 0 auto 10px;
+        text-align: center;
+    }
+
+    .contact-us .btn-wrap a{
+        padding: 15px 40px;
+    }
+}
